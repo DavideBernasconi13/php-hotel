@@ -1,11 +1,19 @@
 <?php
 $tmp = "";
-foreach ($hotels as $hotel) {
+//controllo stringa su parking 
 
+
+
+
+foreach ($hotels as $hotel) {
     $tmp .= "<tr><td>{$hotel['name']}</td>
     <td>{$hotel['description']}</td>
     <td>{$hotel['vote']}</td>
-    <td>{$hotel['parking']}</td>
+    <td>{if($hotel[parking]) {
+            echo 'Possibilità di parcheggio';
+        } else {
+            echo 'Non c\'è parcheggio';
+        }</td>
     <td>{$hotel['distance_to_center']} km</td>
     </tr>";
 }
