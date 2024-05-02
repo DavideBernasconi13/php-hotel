@@ -12,8 +12,6 @@ function checkParcheggio($dato)
 }
 
 foreach ($hotels as $hotel) {
-
-
     $tmp .= "<tr><td>" . $hotel['name'] . "</td>" .
         "<td>{$hotel['description']}</td>
     <td>{$hotel['vote']}</td>
@@ -23,7 +21,8 @@ foreach ($hotels as $hotel) {
 }
 ?>
 
-<table class="table table-sm">
+<div class="spacer"></div>
+<table class="table table-sm table-striped">
     <thead>
         <tr>
             <th scope="col">Nome</th>
