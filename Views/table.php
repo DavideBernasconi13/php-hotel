@@ -1,19 +1,23 @@
 <?php
 $tmp = "";
 //controllo stringa su parking 
-
-
-
+function checkParcheggio($dato)
+{
+    if ($dato) {
+        $parking = 'Possibilità di parcheggio';
+    } else {
+        $parking = 'Non c\'è parcheggio';
+    }
+    return $parking;
+}
 
 foreach ($hotels as $hotel) {
-    $tmp .= "<tr><td>{$hotel['name']}</td>
-    <td>{$hotel['description']}</td>
+
+
+    $tmp .= "<tr><td>" . $hotel['name'] . "</td>" .
+        "<td>{$hotel['description']}</td>
     <td>{$hotel['vote']}</td>
-    <td>{if($hotel[parking]) {
-            echo 'Possibilità di parcheggio';
-        } else {
-            echo 'Non c\'è parcheggio';
-        }</td>
+    <td>" . checkParcheggio($hotel['parking']) . " </td>
     <td>{$hotel['distance_to_center']} km</td>
     </tr>";
 }
