@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="it" data-bs-theme="dark">
+<html lang="it">
+<!--data-bs-theme="dark"-->
 
 <head>
     <meta charset="UTF-8">
@@ -17,3 +18,4 @@
         </div>
     </header>
 
+</body>
