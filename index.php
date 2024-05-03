@@ -1,4 +1,10 @@
 <?php
+session_start();
+if (!isset($_SESSION["userId"])) {
+    session_destroy();
+    header("location: login.php");
+    die;
+}
 include (__DIR__ . '/Views/header.php');
 include (__DIR__ . '/Models/hotels.php');
 

@@ -1,5 +1,8 @@
 <?php
 session_start();
+if (isset($_SESSION["userId"])) {
+    header("location: index.php");
+}
 
 include __DIR__ . "/../Models/user.php";
 
