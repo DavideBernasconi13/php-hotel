@@ -16,16 +16,19 @@
         <div class="container text-center">
             <h1>Hotel</h1>
         </div>
-        <form action="index.php" methods:"GET">
-            <input type="text" placeholder="Inserisci un valore...">
-            <select>
-                <option value="all">Mostra tutti</option>
-                <option value="parcheggio">con parcheggio</option>
-                <option value="senzaParcheggio">Senza parcheggio</option>
-            </select>
-            <button type="submit" class="bg-success">Invia</button>
-            <button type="reset">reset</button>
-        </form>
+        <div class="container">
+            <form action="index.php" methods:"GET">
+                <input type="text" placeholder="Inserisci un valore...">
+                <select name="filtro">
+                    <option value="all">Mostra tutti</option>
+                    <option value="parcheggio">con parcheggio</option>
+                    <option value="senzaParcheggio">Senza parcheggio</option>
+                </select>
+                <button type="submit" class="bg-success">Invia</button>
+                <button type="reset">reset</button>
+            </form>
+        </div>
+
     </header>
 
 </body>
