@@ -16,26 +16,16 @@
 
 <body>
     <header>
-        <div class="container text-center">
-            <h1>Hotel</h1>
-        </div>
         <div class="container">
-            <form id="search" action="index.php" methods="GET">
-                <input type="text" placeholder="Inserisci un valore...">
-                <select name="filtro">
-                    <option value="all">Mostra tutti</option>
-                    <option value="parcheggio">con parcheggio</option>
-                    <option value="senzaParcheggio">Senza parcheggio</option>
-                </select>
-                <button type="submit" class="bg-success">Invia</button>
-                <button type="reset">reset</button>
-            </form>
-            <div class="user d-flex">
-                <h4><i class="fa fa-user-circle" aria-hidden="true"></i> Benvenuto <?= $_SESSION["name"] ?></h4>
-                <button class="bg-danger"><a href="logout.php">Esci</a></button>
-            </div>
-
+            <h1 class="display-1">Cerca hotel</h1>
+            <?php
+            if (isset($_SESSION["userID"])) {
+                include (__DIR__ . "/Views/toolbar.php");
+            }
+            ?>
         </div>
+
+
     </header>
 
 </body>

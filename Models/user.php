@@ -9,7 +9,7 @@ $users = [
     ],
     [
         'id' => 2,
-        'name' => 'Marco',
+        'name' => 'Ermenegildo',
         'surname' => 'Marini',
         'password' => '12345',
         'email' => 'marco@marco.com',
