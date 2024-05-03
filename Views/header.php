@@ -17,7 +17,7 @@
             <h1>Hotel</h1>
         </div>
         <div class="container">
-            <form action="index.php" methods:"GET">
+            <form id="search" action="index.php" methods:"GET">
                 <input type="text" placeholder="Inserisci un valore...">
                 <select name="filtro">
                     <option value="all">Mostra tutti</option>
@@ -28,7 +28,6 @@
                 <button type="reset">reset</button>
             </form>
         </div>
-
     </header>
 
 </body>

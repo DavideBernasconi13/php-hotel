@@ -1,5 +1,5 @@
 <footer>
-    <div class="bg-light text-center text-dark">
+    <div class="text-center text-light">
         Footer incluso &copy; 2024 | By DABE
     </div>
 </footer>

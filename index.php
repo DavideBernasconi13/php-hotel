@@ -10,8 +10,12 @@ include (__DIR__ . '/Models/hotels.php');
 
 <main>
     <div class="container">
-    <?php include (__DIR__ . '/Views/table.php'); ?>
+        <div class="spacer"></div>
+        <div class="wrapper-table">
+            <?php include (__DIR__ . '/Views/table.php'); ?>
+        </div>
     </div>
+    <div class="spacer"></div>
 
 </main>
 

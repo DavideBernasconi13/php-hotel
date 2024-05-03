@@ -20,9 +20,7 @@ foreach ($hotels as $hotel) {
     </tr>";
 }
 ?>
-
-<div class="spacer"></div>
-<table class="table table-sm table-striped">
+<table class="table table-sm table-striped m-0">
     <thead>
         <tr>
             <th scope="col">Nome</th>
