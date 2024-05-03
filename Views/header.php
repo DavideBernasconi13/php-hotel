@@ -19,8 +19,10 @@
         <div class="container">
             <h1 class="display-1">Cerca hotel</h1>
             <?php
-            if (isset($_SESSION["userID"])) {
-                include (__DIR__ . "/Views/toolbar.php");
+
+            if (isset($_SESSION["userId"])) {
+                //var_dump($_SESSION);
+                include (__DIR__ . "/toolbar.php");
             }
             ?>
         </div>
