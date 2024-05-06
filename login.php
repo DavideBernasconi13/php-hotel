@@ -5,26 +5,34 @@ include __DIR__ . "/Views/header.php";
 
 
 ?>
-<main class="container py-4 bg-body-tertiary my-4">
+<main class="container">
     <?php
     if (!empty($_GET['error'])) {
         echo "<div class='alert alert-danger'>Email o password errati</div>";
     }
     ?>
-    <div class="d-flex justify-content-center align-items-center">
-        <form id="loginform" action="login.php" method="POST">
-            <img class="mb-4" src="./images/mobile-logo.png" alt="logo" width="100">
-            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    <div class="login  d-flex justify-content-center align-items-center mt-4">
+        <form action="login.php" method="post">
 
-            <div class="form-floating mb-4">
-                <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email">
-                <label for="email">Email address</label>
+            <h2>Accedi</h2>
+
+            <div class="input">
+                <input type="email" name="email" placeholder="Inserisci la tua mail">
+                <label for="email">Email</label>
+                <span></span>
             </div>
-            <div class="form-floating mb-4">
-                <input type="password" class="form-control" id="password" placeholder="Password" name="password">
-                <label for="password">Password</label>
+            <div class="input">
+                <input type="password" name="password" placeholder="Inserisci la password">
+                <label for="email">Password</label>
+                <span></span>
             </div>
-            <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+
+            <div class="link">
+                <a href="#">Password dimenticata?</a>
+                <a href="#">Registrati</a>
+            </div>
+
+            <input type="submit" value="Accedi">
 
         </form>
     </div>

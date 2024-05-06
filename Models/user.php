@@ -27,6 +27,13 @@ $users = [
         'surname' => 'Alessandri',
         'password' => '11111',
         'email' => 'admin@steam.com',
+    ],
+    [
+        'id' => 5,
+        'name' => 'Davide',
+        'surname' => 'Bernasconi',
+        'password' => 'Canepazzo134',
+        'email' => 'info@dabecomunicazione.it',
     ]
 ];
 
